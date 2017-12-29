@@ -53,18 +53,18 @@
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript">
     apiready = function() {
-
-    };
-    function fnOpenRegisterWin() {
-      api.openWin({
-          name: 'register',
-          url: './register.html',
-          pageParam: {
-              name: 'test'
+      api.openFrame({
+          name: 'main_input',
+          url: './main_input.html',
+          bounces: true,
+          rect: {
+              x: 0,
+              y: 50,
+              w: 'auto',
+              h: 'auto'
           }
       });
-
-    }
+    };
 </script>
 
 </html>
