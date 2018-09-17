@@ -61,7 +61,11 @@
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript">
     apiready = function() {
-        console.log(api.deviceId)
+        if(api.deviceId){
+            console.log(api.deviceId);
+        }else{
+            console.log('无法获取设备id');
+        }
     };
 
     function fnOpenCitySelectFrame() {
